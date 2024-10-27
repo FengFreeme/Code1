@@ -51,5 +51,14 @@
     <ClCompile Include="0019.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Interview0207.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0142.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0242.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -4,21 +4,21 @@ using namespace std;
 
 struct ListNode
 {
-	ListNode* next;
+	ListNode *next;
 	int val;
-	ListNode() :next(NULL), val(0) {}
+	ListNode() :next(nullptr), val(0) {}
 };
 
 class Solution 
 {
 public:
-	ListNode* detectCycle(ListNode* head) 
+	ListNode* detectCycle(ListNode *head) 
 	{
-		if (head == NULL || head->next == NULL || head->next->next == NULL)
-			return NULL;
-		ListNode* slow = head, * fast = head;
+		if (head == nullptr || head->next == nullptr || head->next->next == nullptr)
+			return nullptr;
+		ListNode *slow = head, *fast = head;
 		// 判断是否有环
-		while (fast->next != NULL && fast->next->next != NULL)
+		while (fast->next != nullptr && fast->next->next != nullptr)
 		{
 			fast = fast->next->next;
 			slow = slow->next;
@@ -26,7 +26,7 @@ public:
 				break;
 		}
 		if (slow != fast)
-			return NULL;
+			return nullptr;
 		// 寻找环的入口
 		slow = head;
 		while (slow != fast)

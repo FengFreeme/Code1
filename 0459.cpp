@@ -22,6 +22,7 @@ public:
     //        return false;
     //}
     // 法二 使用next数组
+    /*
     bool repeatedSubstringPattern(string s)
     {
         vector<int> next(s.size(), 0);
@@ -43,8 +44,13 @@ public:
             return true;
 
     }
+    */
+    bool repeatedSubstringPattern(string s)
+    {
+
+    }
 private:
-    
+    /*
     void getnext(vector<int>& next, string s)
     {
         // next 初始化
@@ -66,4 +72,5 @@ private:
             next[i] = j;
         }
     }
+    */
 };

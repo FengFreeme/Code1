@@ -120,5 +120,257 @@
     <ClCompile Include="0150.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="0239.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0347.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0144.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0145.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0094.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0102.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0107.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0199.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0637.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0429.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0515.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0116.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0117.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0104.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0111.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0226.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0101.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0222.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0110.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0257.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0404.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0513.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0112.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0113.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0106.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0105.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0654.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0617.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0700.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0098.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0530.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0501.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0236.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0235.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0701.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0450.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0669.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0108.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0538.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0077.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0216.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0017.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0039.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0040.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0131.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0093.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0078.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0090.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0491.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0047.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0332.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0051.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0037.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0376.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0134.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0135.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0452.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0435.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0056.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0738.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0968.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KC046.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0474.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exercise1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TextQuery.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0322.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0139.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BlobPtr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugDelete.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0213.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0337.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="debug_rep.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0121.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="print.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Blob.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0300.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1035.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lanqiao01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lanqiao02.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KC099.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

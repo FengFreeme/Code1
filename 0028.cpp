@@ -6,30 +6,54 @@ using namespace std;
 class Solution 
 {
 public:
-    //int strStr(string haystack, string needle) 
-    //{
-    //    // 1. 先求 next 数组
-    //    vector<int> next(needle.size(), 0);
-    //    getNext(next, needle);
-    //    // 2. 开始子字符串匹配
-    //    int j = 0;
-    //    for (int i = 0; i < haystack.size(); i++)
-    //    {
-    //        // 不匹配 需要回退至匹配的时候
-    //        while (j >= 1 && haystack[i] != needle[j])
-    //        {
-    //            j = next[j - 1];
-    //        }
-    //        // 匹配 i j 都加 1，其中 i 在for循环中加
-    //        if (haystack[i] == needle[j])
-    //        {
-    //            j++;
-    //        }
-    //        if (j == needle.size())
-    //            return i - needle.size() + 1;
-    //    }
-    //    return -1;
-    //}
+    /*
+    int strStr(string haystack, string needle) 
+    {
+        // 1. 先求 next 数组
+        vector<int> next(needle.size(), 0);
+        getNext(next, needle);
+        // 2. 开始子字符串匹配
+        int j = 0;
+        for (int i = 0; i < haystack.size(); i++)
+        {
+            // 不匹配 需要回退至匹配的时候
+            while (j >= 1 && haystack[i] != needle[j])
+            {
+                j = next[j - 1];
+            }
+            // 匹配 i j 都加 1，其中 i 在for循环中加
+            if (haystack[i] == needle[j])
+            {
+                j++;
+            }
+            if (j == needle.size())
+                return i - needle.size() + 1;
+        }
+        return -1;
+    }
+    */
+    int strStr(string haystack, string needle)
+    {
+        // 表示匹配的位置
+        vector<int> next(needle.size(), 0);
+        getNext(needle, next);
+        // 初始化 j 指向 needle 的下标
+        int j = 0;
+        // 遍历haystack
+        for (int i = 0; i < haystack.size(); i++)
+        {
+            while (j >= 1 && haystack[i] != needle[j])
+            {
+                j = next[j - 1];
+            }
+            if (haystack[i] == needle[j])
+                j++;
+            if (j == needle.size())
+                return i - needle.size() + 1;
+        }
+        return -1;
+    }
+    /*
     int strStr(string haystack, string needle)
     {
         vector<int> next(needle.size());
@@ -57,6 +81,7 @@ public:
         }
         return -1;
     }
+    */
 private:
     //void getNext(vector<int>& next, string needle)
     //{
@@ -77,6 +102,7 @@ private:
     //        next[i] = j;
     //    }
     //}
+    /*
     void getNext(vector<int>& next, string needle)
     {
         // j 指向前缀的最后一个字符
@@ -98,6 +124,25 @@ private:
             }
             next[i] = j;
         }
+    }
+    */
+    void getNext(string needle, vector<int>& next)
+    {
+        // 1. 初始化 j 指向前缀末尾的下一个字符
+        int j = 0;
+        next[0] = 0;
+        // 2. i 指向后缀末尾的下一个字符
+        for (int i = 1; i < needle.size(); i++)
+        {
+            while (j >= 1 && needle[i] != needle[j])
+            {
+                j = next[j - 1];
+            }
+            if (needle[i] == needle[j])
+                j++;
+            next[i] = j;
+        }
+        return;
     }
 };
 

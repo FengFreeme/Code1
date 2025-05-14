@@ -372,5 +372,14 @@
     <ClCompile Include="sort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="priorQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Hot_001.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Hot283.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

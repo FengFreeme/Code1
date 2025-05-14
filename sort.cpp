@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 #include <time.h>
 
@@ -13,15 +13,15 @@ public:
 
         return nums;
     }
-private:
+public:
     void bubbleSort(vector<int>& nums)
     {
-        // n - 1 ÌËÃ°Åİ
+        // n - 1 è¶Ÿå†’æ³¡
         for (int i = 0; i < nums.size() - 1; ++i)
         {
-            // ±ê¼ÇÊÇ·ñ½»»»¹ı
+            // æ ‡è®°æ˜¯å¦äº¤æ¢è¿‡
             bool flag = false;
-            // ÏàÁÚÔªËØ½øĞĞ±È½Ï 
+            // ç›¸é‚»å…ƒç´ è¿›è¡Œæ¯”è¾ƒ 
             for (int j = 1; j <= nums.size() - i - 1; ++j)
             {
                 if (nums[j - 1] > nums[j])
@@ -32,19 +32,19 @@ private:
                     flag = true;
                 }
             }
-            // Èç¹ûÃ»ÓĞ½»»»¹ı£¬ËµÃ÷Êı¾İÒÑ¾­ÓĞĞò£¬ÌáÇ°ÍË³öÑ­»·
+            // å¦‚æœæ²¡æœ‰äº¤æ¢è¿‡ï¼Œè¯´æ˜æ•°æ®å·²ç»æœ‰åºï¼Œæå‰é€€å‡ºå¾ªç¯
             if (!flag)
                 break;
         }
     }
     void selectSort(vector<int>& nums)
     {
-        // n - 1 ÌËÑ¡Ôñ
+        // n - 1 è¶Ÿé€‰æ‹©
         for (int i = 0; i < nums.size() - 1; ++i)
         {
-            // ¼ÇÂ¼×îĞ¡ÔªËØµÄÏÂ±êÎ»ÖÃ
+            // è®°å½•æœ€å°å…ƒç´ çš„ä¸‹æ ‡ä½ç½®
             int index = i;
-            // ´ÓÎŞĞòĞòÁĞÑ¡Ôñ×îĞ¡ÔªËØ ÒòÎªÒÑ¾­ÉèÖÃ index = i ÁË£¬Ö±½Ó´Ó i + 1 ¿ªÊ¼
+            // ä»æ— åºåºåˆ—é€‰æ‹©æœ€å°å…ƒç´  å› ä¸ºå·²ç»è®¾ç½® index = i äº†ï¼Œç›´æ¥ä» i + 1 å¼€å§‹
             for (int j = i + 1; j < nums.size(); ++j)
             {
                 if (nums[j] < nums[index])
@@ -60,18 +60,18 @@ private:
     }
     void insertSort(vector<int>& nums)
     {
-        // ¼Ù¶¨µÚÒ»¸öÔªËØÊÇÓĞĞòĞòÁĞ£¬i ´Ó 1 ¿ªÊ¼
+        // å‡å®šç¬¬ä¸€ä¸ªå…ƒç´ æ˜¯æœ‰åºåºåˆ—ï¼Œi ä» 1 å¼€å§‹
         for (int i = 1; i < nums.size(); ++i)
         {
             int temp = nums[i];
-            // Ñ°ÕÒ²åÈëÎ»ÖÃ ´ÓºóÍùÇ°ÕÒ µÚÒ»¸öĞ¡ÓÚ nums[i] µÄÎ»ÖÃ 
+            // å¯»æ‰¾æ’å…¥ä½ç½® ä»åå¾€å‰æ‰¾ ç¬¬ä¸€ä¸ªå°äº nums[i] çš„ä½ç½® 
             int j;
             for (j = i - 1; j >= 0; --j)
             {
-                // ÎÈ¶¨ĞÔµÄÌåÏÖ
+                // ç¨³å®šæ€§çš„ä½“ç°
                 if (nums[j] <= temp)
                     break;
-                // ÒÆ¶¯ÔªËØ£¬¸ø nums[i] ÌÚ³öÎ»ÖÃ
+                // ç§»åŠ¨å…ƒç´ ï¼Œç»™ nums[i] è…¾å‡ºä½ç½®
                 nums[j + 1] = nums[j];
             }
             nums[j + 1] = temp;
@@ -80,21 +80,21 @@ private:
     }
     void shellSort(vector<int>& nums)
     {
-        // gap ·ÖÎª gap ×é£¬½øĞĞ gap ´Î²åÈëÅÅĞò
+        // gap åˆ†ä¸º gap ç»„ï¼Œè¿›è¡Œ gap æ¬¡æ’å…¥æ’åº
         for (int gap = nums.size() / 2; gap >= 1; gap /= 2)
         {
-            // ´ÓÃ¿¸ö×ÓĞòÁĞµÄµÚÒ»¸öÔªËØ¿ªÊ¼±éÀú
+            // ä»æ¯ä¸ªå­åºåˆ—çš„ç¬¬ä¸€ä¸ªå…ƒç´ å¼€å§‹éå†
             for (int i = gap; i < nums.size(); ++i)
             {
                 int j;
                 int temp = nums[i];
                 for (j = i - gap; j >= 0; j -= gap)
                 {
-                    // ÕÒµ½ºÏÊÊµÄ²åÈëÎ»ÖÃ ²åÈëµ½µ±Ç°Î»ÖÃµÄÏÂ¸ö gap Î»ÖÃ
+                    // æ‰¾åˆ°åˆé€‚çš„æ’å…¥ä½ç½® æ’å…¥åˆ°å½“å‰ä½ç½®çš„ä¸‹ä¸ª gap ä½ç½®
                     if (nums[j] <= temp)
                         break;
                     else
-                        // ÒÆ¶¯ÔªËØ ¸øÄ¿±êÔªËØÌÚ³öÎ»ÖÃ
+                        // ç§»åŠ¨å…ƒç´  ç»™ç›®æ ‡å…ƒç´ è…¾å‡ºä½ç½®
                         nums[j + gap] = nums[j];
                 }
                 nums[j + gap] = temp;
@@ -106,19 +106,19 @@ private:
     {
         quickSort(nums, 0, nums.size() - 1);
     }
-    // 1. È·¶¨²ÎÊıºÍ·µ»ØÀàĞÍ
-    void quickSort(vector<int>& nums, int low, int high)
-    {
-        // 2. È·¶¨ÖÕÖ¹Ìõ¼ş
-        if (low >= high)
-            return;
-        // 3. µ¥´Îµİ¹é´¦Àí
-        int pivot = Paritition(nums, low, high);
-        quickSort(nums, low, pivot - 1);
-        quickSort(nums, pivot + 1, high);
-    }
-    // ¿ìÅÅ»®·Öº¯Êı
-    int Paritition(vector<int>& nums, int low, int high)
+    // 1. ç¡®å®šå‚æ•°å’Œè¿”å›ç±»å‹
+    //void quickSort(vector<int>& nums, int low, int high)
+    //{
+    //    // 2. ç¡®å®šç»ˆæ­¢æ¡ä»¶
+    //    if (low >= high)
+    //        return;
+    //    // 3. å•æ¬¡é€’å½’å¤„ç†
+    //    int pivot = Paritition(nums, low, high);
+    //    quickSort(nums, low, pivot - 1);
+    //    quickSort(nums, pivot + 1, high);
+    //}
+    // å¿«æ’åˆ’åˆ†å‡½æ•°
+    /*int Paritition(vector<int>& nums, int low, int high)
     {
         int middle = (high - low) / 2 + low;
         int index = low;
@@ -144,28 +144,72 @@ private:
         }
         nums[low] = val;
         return low;
+    }*/
+    // 1. ç¡®å®šå½¢å‚å’Œè¿”å›ç±»å‹
+    void quickSort(vector<int>& nums, int low, int high)
+    {
+        // 2. ç¡®å®šç»ˆæ­¢æ¡ä»¶
+        if (low >= high)
+            return;
+        // 3. å•æ¬¡é€’å½’å¤„ç†
+        // åˆ’åˆ†å‡½æ•°
+        int pivot = Paritition(nums, low, high);
+        quickSort(nums, low, pivot - 1);
+        quickSort(nums, pivot + 1, high);
+
+        return;
     }
+    int Paritition(vector<int>& nums, int low, int high)
+    {
+        int val = nums[low];
+        while (low < high)
+        {
+            if (low < high && nums[high] >= val)
+                --high;
+            nums[low] = nums[high];
+            if (low < high && nums[low] <= val)
+                ++low;
+            nums[high] = nums[low];
+        }
+        nums[low] = val;
+
+        return low;
+    }
+
     void mSort(vector<int>& nums)
     {
         mergeSort(nums, 0, nums.size() - 1);
 
         return;
     }
-    // 1. È·¶¨ĞÎ²ÎºÍ·µ»ØÀàĞÍ
+    // 1. ç¡®å®šå½¢å‚å’Œè¿”å›ç±»å‹
+    //void mergeSort(vector<int>& nums, int low, int high)
+    //{
+    //    // 2. ç¡®å®šç»ˆæ­¢æ¡ä»¶
+    //    if (low >= high)
+    //        return;
+    //    // 3. å•æ¬¡é€’å½’å¤„ç†
+    //    int mid = low + (high - low) / 2;
+    //    mergeSort(nums, low, mid);
+    //    mergeSort(nums, mid + 1, high);
+    //    Merge(nums, low, mid, high);
+
+    //    return;
+    //}
+    // äºŒè·¯å½’å¹¶æ’åº
+    // 1. ç¡®å®šå‚æ•°å’Œå½¢å‚
     void mergeSort(vector<int>& nums, int low, int high)
     {
-        // 2. È·¶¨ÖÕÖ¹Ìõ¼ş
+        // 2. ç¡®å®šç»ˆæ­¢æ¡ä»¶
         if (low >= high)
             return;
-        // 3. µ¥´Îµİ¹é´¦Àí
-        int mid = low + (high - low) / 2;
+        int mid = (high - low) / 2 + low;
         mergeSort(nums, low, mid);
         mergeSort(nums, mid + 1, high);
-        Merge(nums, low, mid, high);
 
-        return;
+        Merge(nums, low, mid, high);
     }
-    void Merge(vector<int>& nums, int low, int mid, int high)
+    /*void Merge(vector<int>& nums, int low, int mid, int high)
     {
         vector<int> leftNums(nums.begin() + low, nums.begin() + mid + 1);
         vector<int> rightNums(nums.begin() + mid + 1, nums.begin() + high + 1);
@@ -186,6 +230,72 @@ private:
             }
         }
         return;
+    }*/
+    void Merge(vector<int>& nums, int low, int mid, int high)
+    {
+        vector<int> leftNums(nums.begin() + low, nums.begin() + mid + 1);
+        vector<int> rightNums(nums.begin() + mid + 1, nums.begin() + high + 1);
+        int leftIndex = 0, rightIndex = 0;
+        for (int i = low; i <= high; ++i)
+        {
+            if (leftNums[leftIndex] < rightNums[rightIndex])
+            {
+                nums[i] = leftNums[leftIndex];
+                ++leftIndex;
+            }
+            else
+            {
+                nums[i] = rightNums[rightIndex];
+                ++rightIndex;
+            }
+        }
+        return;
+    }
+    void heapSort(vector<int>& nums)
+    {
+        // 1. é¦–å…ˆå°†æ•°ç»„è°ƒæ•´ä¸ºå¤§æ ¹å † å®ç°ä»å°åˆ°å¤§çš„æ’åº
+        // ä»æœ€åä¸€ä¸ªéå¶å­èŠ‚ç‚¹å¼€å§‹è°ƒæ•´
+        int n = nums.size() - 1;
+        for (int i = (n - 1) / 2; i >= 0; --i)
+        {
+            ShiftDown(nums, i, nums.size());
+        }
+        // å¼€å§‹å †æ’åº
+        for (int i = n; i > 0; --i)
+        {
+            // å †é¡¶å…ƒç´ ï¼ˆæœ€å¤§å…ƒç´ ï¼‰å’Œå½“å‰å †å°¾å…ƒç´ è¿›è¡Œäº¤æ¢
+            swap(nums[0], nums[i]);
+            ShiftDown(nums, 0, i);
+        }
+    }
+
+    /*
+    * - åŠŸèƒ½: å †çš„ä¸‹æ²‰è°ƒæ•´
+    * - i: è¦è¿›è¡Œä¸‹æ²‰è°ƒæ•´çš„å…ƒç´ 
+    * - size: å †çš„å¤§å°
+    */
+    
+    void ShiftDown(vector<int>& nums, int i, int size)
+    {
+        int val = nums[i];
+        while (i <= (size - 2) / 2)
+        {
+            int child = 2 * i + 1;
+            if (child >= size)
+                break;
+            if (child + 1 < size && nums[child + 1] > nums[child])
+                child = child + 1;
+            if (nums[child] > val)
+            {
+                nums[i] = nums[child];
+                i = child;
+            }
+            else
+            {
+                break;
+            }
+        }
+        nums[i] = val;
     }
 };
 
@@ -201,11 +311,56 @@ int main()
     cout << endl;
 
     Solution S;
-    S.sortArray(nums);
+    S.qSort(nums);
 
     for (int i = 0; i < 10; ++i)
     {
         cout << nums[i] << " ";
     }
     cout << endl;
+//    Solution S;
+//
+//    const int COUNT = 50000000;
+//    vector<int> nums1(COUNT, 0);
+//    vector<int> nums2(COUNT, 0);
+//    vector<int> nums3(COUNT, 0);
+//    vector<int> nums4(COUNT, 0);
+//
+//    srand(time(NULL));
+//
+//    for (int i = 0; i < COUNT; ++i)
+//    {
+//        int val = rand() % COUNT;
+//        nums1[i] = val;
+//        nums2[i] = val;
+//        nums3[i] = val;
+//        nums4[i] = val;
+//    }
+//    /*
+//    * lock()å‡½æ•°â€‹â€‹ï¼š
+//    *   - è¿™æ˜¯C/C++æ ‡å‡†åº“ <ctime> æˆ– <time.h> ä¸­çš„å‡½æ•°ï¼Œè¿”å›ç¨‹åºå¯åŠ¨åˆ°å½“å‰æ—¶åˆ»çš„â€‹â€‹CPUæ—¶é’Ÿå‘¨æœŸæ•°â€‹â€‹ï¼ˆç±»å‹ä¸º clock_tï¼‰ã€‚
+//â€‹â€‹    * CLOCKS_PER_SECå®â€‹â€‹ï¼š
+//    *   - è¡¨ç¤ºâ€‹â€‹æ¯ç§’çš„æ—¶é’Ÿå‘¨æœŸæ•°â€‹â€‹ï¼Œç”¨äºå°†æ—¶é’Ÿå‘¨æœŸå·®å€¼è½¬æ¢ä¸ºç§’ã€‚
+//    */
+//    clock_t begin, end;
+//    begin = clock();
+//    S.qSort(nums1);
+//    end = clock();
+//    // è½¬ä¸ºæµ®ç‚¹æ•°
+//    cout << "QuickSort Spend: " << (end - begin) * 1.0 / CLOCKS_PER_SEC << "s" << endl;
+//
+//    begin = clock();
+//    S.mSort(nums2);
+//    end = clock();
+//    cout << "MergeSort Spend: " << (end - begin) * 1.0 / CLOCKS_PER_SEC << "s" << endl;
+//
+//    begin = clock();
+//    S.shellSort(nums3);
+//    end = clock();
+//    cout << "ShellSort Spend: " << (end - begin) * 1.0 / CLOCKS_PER_SEC << "s" << endl;
+//
+//    begin = clock();
+//    S.heapSort(nums4);
+//    end = clock();
+//    cout << "HeapSort Spend: " << (end - begin) * 1.0 / CLOCKS_PER_SEC << "s" << endl;
 }
